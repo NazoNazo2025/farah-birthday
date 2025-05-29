@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For Farah 🌿</title>
+
+  <!-- Google Fonts for French poem style -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>A little surprise for you, Farah 🌸</h1>
+    <div id="countdown" class="countdown">
+        <div class="time-segment">
+            <span class="number" id="days">00</span>
+            <span class="label">Days</span>
+        </div>
+        <div class="time-segment">
+            <span class="number" id="hours">00</span>
+            <span class="label">Hours</span>
+        </div>
+        <div class="time-segment">
+            <span class="number" id="minutes">00</span>
+            <span class="label">Minutes</span>
+        </div>
+        <div class="time-segment">
+            <span class="number" id="seconds">00</span>
+            <span class="label">Seconds</span>
+        </div>
+    </div>
+
+
+    <button id="startButton" style="display: none;">Start</button>
+
+    <div id="messageSection" style="display: none;">
+      <audio id="bgMusic" src="assets/your_name.mp4"></audio>
+
+      <div id="poem"></div>
+      <button id="continueButton" style="display:none;">Continue</button>
+      <button id="surpriseButton" style="display:none;">Tap here 🎁</button>
+
+      <div id="surpriseMessage"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
