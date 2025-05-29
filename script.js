@@ -8,7 +8,7 @@ const audio = document.getElementById("bgMusic");
 const poemDiv = document.getElementById("poem");
 
 // Countdown target date
-const targetDate = new Date("2025-05-29T00:00:00");
+const targetDate = new Date("2025-05-30T00:00:00");
 
 // Poem parts as an array of strings
 const poemParts = [
