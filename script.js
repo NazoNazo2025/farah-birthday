@@ -8,13 +8,30 @@ const audio = document.getElementById("bgMusic");
 const poemDiv = document.getElementById("poem");
 
 // Countdown target date
-const targetDate = new Date("2025-05-30T00:00:00");
+const targetDate = new Date("2025-05-29T00:00:00");
 
 // Poem parts as an array of strings
 const poemParts = [
-  "Farah, in the garden of time, every moment blooms like a secret flower.",
-  "Whispers of the ocean and rustling leaves sing the song of your smile.",
-  "May this day, painted in the hues of green and blue, carry my wishes to you."
+  "There are voices we hear,and voices we remember.",
+  "Yours—like wind over water—lingers even when silence falls",
+  "I don’t know the paths you’ve walked, nor the dreams you’ve whispered to the trees.",
+  "but I believe they carry the softness of someone who feels the world deeply.",
+  "Farah, today, the sun rose just a little kinder.",
+  "Maybe it knew this day once brought you into the world.",
+  "You’ve spoken into the universe with words wrapped in warmth, and somehow, they reached me.",
+  "Not as noise. Not even as echo. But as meaning.",
+  "You, with a voice that could convince even the stars to hum.",
+  "With eyes that seem to notice the way petals lean into the wind.",
+  "There’s magic in people like you. Not the kind that shouts. The quiet kind.",
+  "The kind that grows in hidden gardens and touches lives without asking anything in return.",
+  "If birthdays are markers, then today marks more than time. It marks presence.",
+  "The presence of someone who listens to the rhythm of life and chooses to add her own harmony.",
+  "You may not always see what you spark, how your presence might nudge a soul back into writing",
+  "how a laugh or a thought shared becomes someone’s turning point. But I see it. I felt it.",
+  "You inspired me. And I wonder how many more you’ve unknowingly moved.",
+  "They say people like you are poems written by the universe and left behind as reminders—of softness, strength, and beginnings.",
+  "So let this be mine to you: A page offered on your day, filled with the echo of gratitude and something that could be hope.",
+  "So here’s to you, Farah—on this quiet, extraordinary day. You are not just celebrated. You are remembered, and more than that—you are heard."
 ];
 
 let currentPart = 0;
