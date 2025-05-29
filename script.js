@@ -8,7 +8,7 @@ const audio = document.getElementById("bgMusic");
 const poemDiv = document.getElementById("poem");
 
 // Countdown target date
-const targetDate = new Date("2025-05-30T00:00:00");
+const targetDate = new Date("2025-05-29T00:00:00");
 
 // Poem parts as an array of strings
 const poemParts = [
@@ -64,15 +64,13 @@ function displayWords(part) {
       span.style.transition = "opacity 0.5s ease";
       poemDiv.appendChild(span);
 
-      // Trigger fade in
       requestAnimationFrame(() => {
         span.style.opacity = 1;
       });
 
       wordIndex++;
-      setTimeout(showNextWord, 200); 
+      setTimeout(showNextWord, 200);
     } else {
-      // Show appropriate button
       if (currentPart < poemParts.length - 1) {
         continueButton.style.display = "inline-block";
       } else {
@@ -84,7 +82,6 @@ function displayWords(part) {
   showNextWord();
 }
 
-// Start button click handler
 startButton.addEventListener("click", () => {
   audio.play().catch(err => console.error("Audio error:", err));
   messageSection.style.display = "block";
@@ -94,7 +91,6 @@ startButton.addEventListener("click", () => {
   displayWords(poemParts[currentPart]);
 });
 
-// Continue button click handler
 continueButton.addEventListener("click", () => {
   currentPart++;
   if (currentPart < poemParts.length) {
@@ -103,7 +99,6 @@ continueButton.addEventListener("click", () => {
   continueButton.style.display = "none";
 });
 
-// Surprise button click handler
 surpriseButton.addEventListener("click", () => {
   surpriseMessage.style.display = "block";
   surpriseMessage.textContent = "🎉 Happy Birthday, Farah! 🎉";
